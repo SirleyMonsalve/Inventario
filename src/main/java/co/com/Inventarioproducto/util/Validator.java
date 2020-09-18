@@ -7,12 +7,6 @@ import java.util.Date;
 public class Validator {
 
 
-    public static void valorNulo(Integer valor, String mensaje) throws BusinnessException {
-        if(valor == null){
-            throw new BusinnessException(mensaje);
-        }
-    }
-
     public static void valorNulo(String valor, String mensaje) throws BusinnessException {
         if(valor == null){
             throw new BusinnessException(mensaje);

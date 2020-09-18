@@ -43,7 +43,6 @@ public class Producto {
         }
         public Producto build() throws BusinnessException {
             Producto producto = new Producto();
-            Validator.valorNulo(idProducto,ID_VACIO);
             producto.idProducto = idProducto;
             Validator.valorNulo(nombre,NOMBRE_VACIO);
             producto.nombre = nombre;
