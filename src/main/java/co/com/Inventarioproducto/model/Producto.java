@@ -4,7 +4,7 @@ public class Producto {
     private Integer idProducto;
     private Integer precio;
     private boolean activo;
-    private String nombreTarifa;
+    private String stock;
 
     public Integer getIdProducto() {
         return idProducto;
@@ -30,12 +30,12 @@ public class Producto {
         this.activo = activo;
     }
 
-    public String getNombreTarifa() {
-        return nombreTarifa;
+    public String getStock() {
+        return stock;
     }
 
     public void setNombreTarifa(String nombreTarifa) {
-        this.nombreTarifa = nombreTarifa;
+        this.stock = stock;
     }
 
 
