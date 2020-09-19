@@ -21,7 +21,9 @@ public class ProductoTest {
     @Test
     public void crearProductoSinPrecio(){
         try {
-            Producto producto = new Producto.ProductoBuilder().setNombre("Carro").build();
+            Producto producto = new Producto.ProductoBuilder().setNombre("Carro")
+                    .setPrecio(0)
+                    .build();
 
         }catch (Exception e){
             assertEquals(Producto.VALOR_PRODUCTO_NO_VALIDO,e.getMessage());
